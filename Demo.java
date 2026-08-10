@@ -39,7 +39,7 @@ public class Demo {
         System.out.println("Debit Amount:" + debit);
         System.out.println("Pin :" + pin);
 
-        amount=avail+credit+
+        amount=avail+credit-debit;
         System.out.println("Total Amount:" + amount);
 
         System.out.println("Address:" + address);

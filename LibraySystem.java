@@ -6,10 +6,10 @@ public class LibraySystem {
     boolean isBookAdded=false;
     void viewBook(){
        if(!isBookAdded){
-        System.out.print("----Go and Add Book First----");
+        System.out.print("Go and Add Book First");
        }
        else{
-         System.out.print("----View Book Details----\n");
+         System.out.print("View Book Details\n");
         System.out.println("Book Id: "+BookId);
         System.out.println("Book Name: "+BookName);
         System.out.println("Book Author: "+BookAuthor);
@@ -19,7 +19,7 @@ public class LibraySystem {
     }
     void searchBook(){
         if(!isBookAdded){
-        System.out.println("----Go and Add Book First----");
+        System.out.println("Go and Add Book First");
        }
        
        else{
@@ -31,14 +31,14 @@ public class LibraySystem {
             
         }
         else{
-            System.out.println("----Book Not Found----");
+            System.out.println("Book Not Found");
         }
        }
         
     }
 
     void addBook(){
-        System.out.print("----Add Your Book----\n");
+        System.out.print("Add Your Book\n");
         System.out.print("Enter Book Id: ");
         BookId=sc.nextInt();
         System.out.print("Enter Book Name: ");
@@ -54,7 +54,7 @@ public class LibraySystem {
         isBookAdded=true;
     }
     void mainMenu() {
-        System.out.println("----Libray Managment----\n");
+        System.out.println("Libray Managment\n");
         System.out.println("1. Add Book");
         System.out.println("2. View Books");
         System.out.println("3. Search Books");
