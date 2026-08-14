@@ -6,6 +6,59 @@ public class EmployeeManagement{
     String gender="", Name="", Department="";
     boolean isEmployee=false;
 
+    void delete(){
+        if(isEmployee==false)
+{
+    System.out.println("First Add Employee Details Then View");
+}
+ else{
+        int newId;
+        System.out.print("Enter Employee Id: ");
+        newId=sc.nextInt();
+        if (Eid==newId) {
+             System.out.println("Add Employee Id");
+        Eid=sc.nextInt();
+         Eid=0; age=0; salary=0;
+        System.out.println("Employee Details Delete Sucesssfully\n");
+        }
+        System.out.println("Employee Not Found\n\n");
+       }
+// Method what is ? type of method , parametr, written type, method over loading, what is array 1D and 2D, string class, string builder, string buffer,
+    }
+    void update(){
+        if(isEmployee==false)
+{
+    System.out.println("First Add Employee Details Then View");
+}
+ else{
+        int newId;
+        System.out.print("Enter Employee Id: ");
+        newId=sc.nextInt();
+        if (Eid==newId) {
+             System.out.println("Add Employee Id");
+        Eid=sc.nextInt();
+        System.out.println("Add Employee Salary");
+        salary=sc.nextInt();
+        System.out.println("Add Employee Name");
+        
+        Name=sc.nextLine();
+        sc.next();
+        System.out.println("Add Employee Age");
+        age=sc.nextInt();
+        sc.nextLine();
+        System.out.println("Add Employee Gender");
+        gender=sc.nextLine();
+        System.out.println("Add Employee Department");
+        Department=sc.nextLine();
+            
+        }
+        else{
+            System.out.println("Employee Not Found");
+        }
+       }
+
+    }
+
 void search(){
 if(isEmployee==false)
 {
@@ -45,9 +98,11 @@ if(isEmployee==false)
         Eid=sc.nextInt();
         System.out.println("Add Employee Salary");
         salary=sc.nextInt();
+        
         System.out.println("Add Employee Name");
         sc.next();
         Name=sc.nextLine();
+        
         System.out.println("Add Employee Age");
         age=sc.nextInt();
         sc.nextLine();
@@ -83,6 +138,12 @@ if(isEmployee==false)
                     break;
                 case 3:
                      obj.search();
+                    break;
+                case 4:
+                     obj.update();
+                    break;
+                case 5:
+                     obj.delete();
                     break;
                 case 6:
                     System.out.println("Thanku....");
