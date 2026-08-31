@@ -49,10 +49,50 @@ public class Matrix {
       }
       System.out.println();
     }
-  
-  }
 
+    // sum of array
+    System.out.println("Sum of Array 1 and Array 2:");
+      int sum[][]=new int [r][c];
+      for(int i=0;i<2;i++)
+    {
+      for(int j=0;j<2;j++)
+      {
+        sum[i][j]=arr[i][j]+arr2[i][j]; 
+        System.out.print(sum[i][j]+" ");
+      }  
+      System.out.println();
+    }
 
+    System.out.println();
+    // sub of array
+    System.out.println("Subtraction of Array 1 and Array 2:");
+      int sub[][]=new int [r][c];
+      for(int i=0;i<2;i++)
+    {
+      for(int j=0;j<2;j++)
+      {
+        sub[i][j]=arr[i][j]-arr2[i][j]; 
+        System.out.print(sub[i][j]+" ");    
+      }  
+      System.out.println();
+    }
+
+    System.out.println();
+    // div of array
+    System.out.println("Division of Array 1 and Array 2:");
+      int div[][]=new int [r][c];
+      for(int i=0;i<2;i++)
+    {
+      for(int j=0;j<2;j++)
+      {
+        div[i][j]=arr[i][j]/arr2[i][j]; 
+        System.out.print(div[i][j]+" ");    
+      }  
+      System.out.println();
+    }
+}
+
+    
 
 
 
