@@ -3,12 +3,12 @@ public class Matrix {
   Scanner sc=new Scanner(System.in);
   void array()
   {
-    System.out.println("Enter the row of array:");
+    System.out.println("Enter the row of array 1:");
     int r=sc.nextInt();
-    System.out.println("Enter the column of array:");
+    System.out.println("Enter the column of array 1:");
     int c=sc.nextInt();
     int arr[][]=new int[r][c];
-    System.out.println("Enter the Element of array:");
+    System.out.println("Enter the Element of array 1:");
     for(int i=0;i<arr.length;i++)
     {
       for(int j=0;j<arr.length;j++)
@@ -17,7 +17,7 @@ public class Matrix {
       }
     } 
 
-    System.out.println("Array List:");
+    System.out.println("Array List 1:");
     for(int i=0;i<arr.length;i++)
     {
       for(int j=0;j<arr.length;j++)
@@ -26,7 +26,32 @@ public class Matrix {
       }
       System.out.println();
     }
+    System.out.println("Enter the row of array 2:");
+    int r2=sc.nextInt();
+    System.out.println("Enter the column of array 2:");
+    int c2=sc.nextInt();
+    int arr2[][]=new int[r2][c2];
+    System.out.println("Enter the Element of array 2:");
+    for(int i=0;i<arr2.length;i++)
+    {
+      for(int j=0;j<arr2.length;j++)
+      {
+        arr2[i][j]=sc.nextInt();
+      }
+    } 
+
+    System.out.println("Array List 2:");
+    for(int i=0;i<arr2 .length;i++)
+    {
+      for(int j=0;j<arr2.length;j++)
+      {
+        System.out.print(arr2[i][j]+" ");
+      }
+      System.out.println();
+    }
+  
   }
+
 
 
 
