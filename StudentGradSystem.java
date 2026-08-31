@@ -1,16 +1,14 @@
 import java.util.Scanner;
 
 class StudentGradSystem {
-
-    void studentDetails() {
-
-        String name;
+ Scanner sc = new Scanner(System.in);
+ String name;
         long rollNo;
         byte java, python, c;
         short total;
         float per;
-
-        Scanner sc = new Scanner(System.in);
+    void studentDetails() {
+    
 
         System.out.print("Enter Name: ");
         name = sc.nextLine();

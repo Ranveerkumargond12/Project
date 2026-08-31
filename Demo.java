@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class Demo {
+       Scanner sc = new Scanner(System.in);
     void manage(){
         String name;
         String user;
@@ -11,7 +12,7 @@ public class Demo {
         long amount;
         String address;
 
-        Scanner sc = new Scanner(System.in);
+     
         System.out.println("Enter Name : ");
         name=sc.nextLine();
         System.out.println("Enter User Id: ");
