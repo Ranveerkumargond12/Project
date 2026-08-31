@@ -90,6 +90,22 @@ public class Matrix {
       }  
       System.out.println();
     }
+    System.out.println();
+    // mul of array
+    System.out.println("Multiplication of Array 1 and Array 2:");
+      int mul[][]=new int [r][c];
+      for(int i=0;i<2;i++)
+    {
+      for(int j=0;j<2;j++)
+      {
+        for(int k=0;k<2;k++)
+      {
+        mul[i][j]=arr[i][j]+arr[i][k]*arr2[k][j]; 
+        System.out.print(mul[i][j]+" ");    
+      }     
+      }  
+      System.out.println();
+    }
 }
 
     

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Demo {
+public class AccountManagement {
        Scanner sc = new Scanner(System.in);
     void manage(){
         String name;
@@ -49,7 +49,7 @@ public class Demo {
         
     }
     public static void main(String[] args){
-        Demo obj= new Demo();
+        AccountManagement obj= new AccountManagement();
         obj.manage();
     }
  }
